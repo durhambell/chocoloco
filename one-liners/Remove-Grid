@@ -1,0 +1,2 @@
+#list local installs | display it in gridview window - passthru to | choco uninstall 
+Choco List -l -idonly | out-gridview -PassThru | ForEach-Object { choco.exe uninstall $_ }
